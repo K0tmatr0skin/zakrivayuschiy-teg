@@ -17,4 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font-family, Arial, sans-serif);
+  font-size: var(--main-font-size, 18px);
+  font-variation-settings: 'wght' var(--main-font-weight-light);
 }
