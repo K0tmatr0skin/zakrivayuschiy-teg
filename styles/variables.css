@@ -1,11 +1,14 @@
 :root {  
-    --main-font-family: 'Inter-Variable', sans-serif;
-    --accent-font-family: 'PressStart2P', sans-serif;
-    --main-font-size: 18px;
+  --main-font-family: 'Inter-Variable', sans-serif;
+  --accent-font-family: 'PressStart2P', sans-serif;
+  --main-font-size: 18px;
     
-    --main-font-weight-light: 400;
-    --main-font-weight-title-light: 700;
+  --main-font-weight-light: 400;
+  --main-font-weight-title-light: 700;
 
-    --main-font-weight-dark: 465;
-    --main-font-weight-title-dark: 785;
-  }
+  --main-font-weight-dark: 465;
+  --main-font-weight-title-dark: 785;
+
+  --background-color: #FFFFFF;
+  --accent-color: #000000;
+}
