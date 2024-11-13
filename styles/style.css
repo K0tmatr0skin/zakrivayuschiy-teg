@@ -19,7 +19,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font-family, Arial, sans-serif);
   font-size: var(--main-font-size, 18px);
-  font-variation-settings: 'wght' var(--main-font-weight-light);
+  font-variation-settings: 'wght' var(--main-font-weight);
   background-color: var(--background-color);
   color: var(--accent-color);
   background-image: var(--background-image);
