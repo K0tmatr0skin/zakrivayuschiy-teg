@@ -11,4 +11,6 @@
 
   --background-color: #FFFFFF;
   --accent-color: #000000;
+
+  --background-image: url('../svg/pattern-light.svg')
 }
