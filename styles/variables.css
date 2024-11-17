@@ -11,4 +11,7 @@
   --background-image: url('../svg/pattern-light.svg');
 
   --max-width: 700px;
+
+  --heart-fill: #FF0000;
+  --heart-contour: #000;
 }

@@ -11,6 +11,7 @@
   --background-color: #FFFFFF;
   --accent-color: #000000;
   --background-image: url('../svg/pattern-light.svg');
+  --heart-contour: #000;
 }
 
 .page.theme-dark {
@@ -19,6 +20,7 @@
     --background-color: #000000;
     --accent-color: #00CC14;
     --background-image: url('../svg/pattern-dark.svg');
+    --heart-contour: #00CC14;
   }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +30,7 @@
     --background-color: #000000;
     --accent-color: #00CC14;
     --background-image: url('../svg/pattern-dark.svg');
+    --heart-contour: #00CC14;
   }
 }
   
