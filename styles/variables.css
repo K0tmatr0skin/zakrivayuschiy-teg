@@ -1,7 +1,6 @@
 :root {  
   --main-font-family: 'Inter-Variable', sans-serif;
   --accent-font-family: 'PressStart2P', sans-serif;
-  --main-font-size: 18px;
     
   --main-font-weight: 400;
   --main-font-weight-title: 700;
@@ -9,5 +8,7 @@
   --background-color: #FFFFFF;
   --accent-color: #000000;
 
-  --background-image: url('../svg/pattern-light.svg')
+  --background-image: url('../svg/pattern-light.svg');
+
+  --max-width: 700px;
 }
