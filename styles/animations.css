@@ -15,10 +15,10 @@
 
 @keyframes moving {
     from {
-      inset-inline-start: -14px;
+      inset-inline-start: -20px;
     }
     to {
-      inset-inline-start: -10px;
+      inset-inline-start: -16px;
     }
 }
 

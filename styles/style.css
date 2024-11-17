@@ -23,9 +23,9 @@
   min-block-size: 100dvb;
   font-family: var(--main-font-family, sans-serif);
   font-variation-settings: 'wght' var(--main-font-weight);
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
   color: var(--accent-color);
-  background-image: var(--background-image);
+  background-image: var(--bg-image);
   background-size: 4px;
   background-attachment: fixed;
 }
@@ -36,13 +36,13 @@
   align-items: center;
 
   border: 2px solid var(--accent-color);
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
 
   padding: clamp(120px, 32dvi, 136px) 0 25px;
   margin: 100px 0;
   inline-size: clamp(320px, 100%, var(--max-width));
 
-  font-family: var(--accent-font-family, sans-serif);
+  font-family: var(--accent-font-family, fantasy);
   font-weight: 400;
 }
 
@@ -91,7 +91,7 @@
 .theme-menu__button:disabled::before {
   content: '▶';
   position: absolute;
-  inset-inline-start: -14px;
+  inset-inline-start: -20px;
   animation: moving 0.5s infinite ease-in-out alternate;
 }
 
@@ -128,16 +128,18 @@
 .card {
   font-size: 18px;
   border: 2px solid var(--accent-color);
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
 }
 
 .card__title {
-  padding: 3px 10px;
+  padding: 5px 10px;
   font-variation-settings: 'wght' var(--main-font-weight-title);
   font-size: inherit;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card__image {
+  display: block;
   inline-size: 100%;
   block-size: auto;
 }
@@ -147,6 +149,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  border-top: 2px solid var(--accent-color);
 }
 
 .content__buttons {
@@ -269,11 +272,11 @@
 }
 
 .button:hover .button__text {
-  color: var(--background-color);
+  color: var(--bg-color);
 }
 
 .button:hover .save-icon {
-  color: var(--background-color);
+  color: var(--bg-color);
 }
 
 .content__description {
@@ -293,7 +296,7 @@
 
 .button__text {
   position: relative;
-  font-family: var(--accent-font-family, sans-serif);
+  font-family: var(--accent-font-family, fantasy);
   font-size: 14px;
   line-height: 90%;
   z-index: 1;
@@ -310,7 +313,7 @@
   padding: 15px 20px;
   inline-size: 339px;
   block-size: 55px;
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
 }
 
 .save-icon {
