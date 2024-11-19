@@ -409,7 +409,9 @@
           </div>          
         </div>
       </article>
-      <button type="button" class="button save-button">
+      <button type="button" class="button save-button" 
+      onclick="window['dialog-id'].showModal()" 
+      aria-controls="dialog-id">
         <svg viewBox="0 0 28 28" class="save-icon">
           <use href="./svg/floppy.svg#floppy"/>
         </svg>
@@ -417,6 +419,23 @@
           Сохранить на память
         </span>
       </button>
+      <dialog class="modal" id="dialog-id">
+        <div class="modal__description">
+            <svg width="39" height="39" viewBox="0 0 28 28" class="modal-icon">
+              <use href="./svg/floppy.svg#floppy"/>
+            </svg>
+            <p class="modal__text">
+              Вставьте дискету, чтобы продолжить
+            </p> 
+        </div>
+        <form method="dialog">
+          <button type="submit" class="button modal-button">
+            <span class="button__text">
+              OK  
+            </span>    
+          </button>
+        </form>  
+      </dialog>     
     </main>
     <script src="./scripts/set-theme.js"></script>
     <script src="./scripts/like.js"></script>

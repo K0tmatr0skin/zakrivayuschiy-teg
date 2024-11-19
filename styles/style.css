@@ -278,10 +278,6 @@
   background-color: var(--bg-color);
 }
 
-.button:focus {
-  border: none;
-}
-
 .button:focus-visible {
   border: 2px solid var(--accent-color);
   box-shadow: 2px 2px 0 var(--accent-color);
@@ -349,6 +345,47 @@
   aspect-ratio: 1/1;
   transition: color 1s ease;
   mix-blend-mode: difference;
+}
+
+.modal {
+  inline-size: clamp(341px, 100%, 357px);
+  padding: 30px;
+  color: var(--accent-color);
+  font-family: var(--accent-font-family, fantasy);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+}
+
+.modal:is([open]) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.modal::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.modal__description {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal__text {
+  max-inline-size: 200px;
+}
+
+.modal-button {
+  inline-size: clamp(257px, 100%, 293px);
+  padding: 9px 0;
 }
 
 @media (width <= 375px) {
