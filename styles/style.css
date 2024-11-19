@@ -274,6 +274,8 @@
   position: relative;
   border: 2px solid var(--accent-color);
   transition: box-shadow 0.3s ease;
+  color: var(--button-text-color);
+  background-color: var(--bg-color);
 }
 
 .button:focus {
@@ -282,7 +284,7 @@
 
 .button:focus-visible {
   border: 2px solid var(--accent-color);
-  box-shadow: 2px 2px 0 currentColor;
+  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .button::before {
@@ -300,14 +302,6 @@
 
 .button:hover::before {
   scale: 1;
-}
-
-.button:hover .button__text {
-  color: var(--bg-color);
-}
-
-.button:hover .save-icon {
-  color: var(--bg-color);
 }
 
 .content__description {
@@ -331,6 +325,8 @@
   font-size: 14px;
   line-height: 90%;
   z-index: 1;
+  transition: color 1s ease;
+  mix-blend-mode: difference;
 }
 
 .save-button {  
@@ -351,6 +347,8 @@
   z-index: 1;
   inline-size: 21px;
   aspect-ratio: 1/1;
+  transition: color 1s ease;
+  mix-blend-mode: difference;
 }
 
 @media (width <= 375px) {
