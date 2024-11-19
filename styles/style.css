@@ -129,6 +129,7 @@
   font-size: 18px;
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
+  margin-block-end: 50px;
 }
 
 .card__title {
@@ -138,10 +139,40 @@
   border-bottom: 2px solid var(--accent-color);
 }
 
+.card__picture {
+  position: relative;
+  display: flex;
+  margin: 0;
+}
+
 .card__image {
   display: block;
   inline-size: 100%;
   block-size: auto;
+}
+
+.card__label {
+  position: absolute;
+  inset-inline-end: 25px;
+  inset-block-start: 25px;  
+  color: var(--accent-color);
+  font-family: var(--accent-font-family, fantasy);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  text-shadow: 0 0 1px var(--label-shadow, #FFF);
+}
+
+@supports(text-stroke: 1px var(--label-shadow)) or (-webkit-text-stroke: 1px var(--label-shadow)) {
+  .card__label {
+    -webkit-text-stroke: 1px var(--label-shadow);
+    text-stroke: 1px var(--label-shadow);
+    text-shadow: none;
+  }
 }
 
 .card__content {
@@ -302,8 +333,7 @@
   z-index: 1;
 }
 
-.save-button {
-  margin-block-start: 50px;
+.save-button {  
   margin-block-end: 100px;
   display: flex;
   justify-content: center;
