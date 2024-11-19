@@ -8,7 +8,9 @@
   --bg-color: #FFFFFF;
   --accent-color: #000000;
 
-  --bg-image: url('../svg/pattern-light.svg');
+  --bg-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+  linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 
   --max-width: 700px;
 
