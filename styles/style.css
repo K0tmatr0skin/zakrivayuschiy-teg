@@ -388,6 +388,38 @@
   padding: 9px 0;
 }
 
+.contrast {
+  filter: contrast(150%);
+}
+
+.grayscale_mix {
+  filter: grayscale(90%) contrast(110%) brightness(120%);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(120deg);
+}
+
+.saturate {
+  filter: saturate(200%);
+}
+
+.brightness {
+  filter: brightness(90%);
+}
+
+.opacity {
+  filter: opacity(0.8);
+}
+
+.sepia_mix {
+  filter: sepia(80%) blur(2px);
+}
+
 @media (width <= 375px) {
   .save-button {
     inline-size: 310px;
