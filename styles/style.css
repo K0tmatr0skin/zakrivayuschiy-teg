@@ -165,7 +165,9 @@
   text-transform: uppercase;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  text-shadow: 0 0 1px var(--label-shadow, #FFF);
+  text-shadow:
+    0 0 2px var(--label-shadow, #FFF),
+    0 0 4px var(--label-shadow, #FFF);
 }
 
 @supports(text-stroke: 1px var(--label-shadow)) or (-webkit-text-stroke: 1px var(--label-shadow)) {
