@@ -149,6 +149,7 @@
   display: block;
   inline-size: 100%;
   block-size: auto;
+  aspect-ratio: 1/1;
 }
 
 .card__label {
@@ -307,7 +308,7 @@
 }
 
 .paragraph {
-  line-height: 116.667%;
+  line-height: 117%;
 }
 
 .card__like-button {
@@ -349,7 +350,7 @@
 
 .modal {
   inline-size: clamp(341px, 100%, 357px);
-  padding: 30px;
+  padding: 40px;
   color: var(--accent-color);
   font-family: var(--accent-font-family, fantasy);
   font-size: 14px;
@@ -421,6 +422,10 @@
 }
 
 @media (width <= 375px) {
+  .card__label {
+    inset-inline-end: 11px;
+  }
+
   .save-button {
     inline-size: 310px;
     block-size: 84px;
